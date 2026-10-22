@@ -1,0 +1,12 @@
+# Personal layouts and transient Obsidian data
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache/
+.obsidian/graph-cache.json
+.obsidian/workspaces.json
+.obsidian/hotkeys.json
+.trash/
+
+# Operating-system metadata
+.DS_Store
+Thumbs.db

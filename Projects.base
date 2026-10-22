@@ -1,0 +1,17 @@
+filters:
+  and:
+    - 'file.ext == "md"'
+    - 'file.inFolder("Projects")'
+    - 'type == "project"'
+    - 'status != "done"'
+properties:
+  file.name:
+    displayName: Project
+  status:
+    displayName: Status
+views:
+  - type: table
+    name: Projects
+    order:
+      - file.name
+      - status

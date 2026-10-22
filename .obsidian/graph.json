@@ -1,0 +1,7 @@
+{
+  "search": "-path:\"Templates/\" -path:\"Daily/\" -path:\"Archive/\" -file:\"README\"",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": true,
+  "showOrphans": true
+}
