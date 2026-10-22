@@ -1,6 +1,6 @@
 # Home
 
-Choose up to three outcomes for today in your daily note. Keep each commitment's checkbox in its original Project, Task, or Issue note.
+Choose up to three outcomes for today in your daily note. Keep each commitment's checkbox in its original Project, Task, Issue, or Feature Proposal note.
 
 ## Projects
 
@@ -42,5 +42,5 @@ task-todo:/.*/ -path:"Templates/" -path:"Archive/" -file:"README"
 
 - [[README|How to use this vault]]
 - [[Notes/OmniDocBench eval|Starter evaluation task]]
-- Create a Project in `Projects/`; create a Task, Paper, Issue, Meeting, Decision, or Context note in `Notes/`.
+- Create a Project in `Projects/`; create a Task, Paper, Issue, Feature Proposal, Meeting, Decision, or Context note in `Notes/`.
 - Title the note, insert its template, and fill its `project` property with a real project link.

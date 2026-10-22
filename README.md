@@ -1,6 +1,6 @@
 # Obsidian work vault
 
-A small work vault for projects, substantial tasks, papers, issues, meetings, and decisions. It uses Obsidian's built-in features and core plugins.
+A small work vault for projects, substantial tasks, papers, issues, feature proposals, meetings, and decisions. It uses Obsidian's built-in features and core plugins.
 
 ## Open the vault
 
@@ -17,7 +17,7 @@ Home.md                    Daily starting point and live task searches
 Projects.base              Optional table of current project notes
 Projects/                  One overview note per project
 Daily/                     Date-named capture and meeting logs
-Notes/                     Tasks, papers, issues, meetings, decisions, and context
+Notes/                     Tasks, papers, issues, proposals, meetings, decisions, and context
 Templates/                 Reusable note templates
 Attachments/               PDFs, screenshots, and other files
 Archive/                   Finished notes and projects
@@ -36,6 +36,7 @@ Create and title a note, then run **Templates: Insert template** from the comman
 | [Task](Templates/Task.md) | A substantial piece of work, such as an evaluation, investigation, or implementation | `Notes/` |
 | [Paper](Templates/Paper.md) | A paper's ideas, evidence, limitations, citations, and relevance | `Notes/` |
 | [Issue](Templates/Issue.md) | A problem, blocker, discrepancy, or unresolved defect | `Notes/` |
+| [Feature Proposal](Templates/Feature%20Proposal.md) | A proposed feature with evidence, scope, success criteria, and a review outcome | `Notes/` |
 | [Meeting](Templates/Meeting.md) | A conversation with agreements and follow-ups worth keeping | `Notes/` |
 | [Decision](Templates/Decision.md) | A consequential choice whose reasoning you may revisit | `Notes/` |
 | [Daily](Templates/Daily.md) | Today's focus, quick capture, and chronological log | `Daily/`, created automatically by Daily notes |
@@ -50,7 +51,7 @@ Use **Source mode** when editing templates so property placeholders are preserve
 There are two levels of work:
 
 - **A Task note** holds an outcome that needs context, resources, actions, and results. The OmniDocBench evaluation is an example.
-- **A checkbox** is an individual commitment or next action inside a Project, Task, or Issue note.
+- **A checkbox** is an individual commitment or next action inside a Project, Task, Issue, or Feature Proposal note.
 
 Keep each commitment's authoritative checkbox in one note. A project hub links to its Task and Issue notes without copying their checklists. The Home searches include actions from both `Projects/` and `Notes/`.
 
@@ -86,11 +87,14 @@ Suggested note statuses:
 | Task | `planned`, `active`, `done`, `dropped` |
 | Paper | `unread`, `reading`, `read` |
 | Issue | `open`, `investigating`, `resolved`, `dropped` |
+| Feature Proposal | `draft`, `proposed`, `accepted`, `deferred`, `rejected` |
 | Decision | `proposed`, `accepted`, `superseded` |
 
 These are simple conventions, not enforced states. Completing a Task note's status does not check off its actions. Resolve or deliberately drop the remaining checkboxes before finishing or archiving it. Keep future possibilities as ordinary bullets under **Later** until you commit to them.
 
 Use links for projects, meaningful related notes, and recurring people or teams. Add a separate note when it needs its own context, evidence, reuse, or history; a short question or URL can stay in the parent note. No separate Evaluation template is needed: start with Task and adapt its Setup and Results sections.
+
+Use Feature Proposal to explore and review a change before committing to implementation. Start at `draft`, move to `proposed` when ready for review, and record the outcome. Once accepted, link the Task or Jira ticket that owns implementation. A separate Decision note is useful when the choice and its reasoning deserve their own history.
 
 ## The daily and weekly routine
 
@@ -138,7 +142,6 @@ Meeting and Decision are included because they preserve agreements and reasoning
 | Weekly Review | The review needs a repeatable written record | Follow the routine above |
 | Experiment or Run | One Task has many runs with different configurations and large result sets | The Task's Results table and artifact links |
 | Resource | Many non-paper sources need consistent source metadata and quotations | Context, or a link under References |
-| Idea or Proposal | Future work needs discussion, evidence, and a decision before becoming a commitment | A bullet under Later |
 
 Start with Person/Team if meeting preparation is still hard, or Weekly Review if commitments continue to escape the review. Keep Experiment/Run as a possible specialization of Task rather than adding it for every evaluation.
 
